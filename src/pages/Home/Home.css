@@ -1,0 +1,60 @@
+.main-contaniner{
+    background-color: #f6f4f4;
+    width: 100%;
+    height: 100vh;
+}
+.crm-img{
+    width: 600px;
+    height: 550px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+}
+.middle-sepperation{
+    display: flex;
+    justify-content: space-between;
+}
+.explination-para{
+    word-wrap: break-word;
+    margin-top: 10px;
+    word-spacing: 1px;
+    line-height: 200%;
+    width: 900px;
+    color: #6e6a6a;
+}
+.heading{
+    font-size: 60px;
+    word-wrap: break-word;
+    font-weight: 700;
+    
+}
+.sub1-cointainer{
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.auth-middle-algin{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.btn-signin1{
+    padding: 20px 40px;
+    background-color: #d0cdf1;
+    margin-right: 30px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+}
+.btn-signup1{
+    padding: 20px 40px;
+    background-color: #d0cdf1;
+    margin-right: 30px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-container-algin{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.input-lable{
+    font-weight: 500;
+    font-size: 17px;
+    color: rgb(181, 178, 178);
+}
+.input{
+    width: 200px;
+    height: 30px;
+    margin-left: 30px;
+    border-radius: 12px;
+    border: 2px solid lightblue;
+     
+}
+.btn-signin{
+    padding: 10px 15px;
+    background-color: #d0cdf1;
+    margin-right: 30px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+}
