@@ -18,7 +18,8 @@ export default function List() {
     const getdata =async()=>{
           try {
             let {data}  = await Axios.get("list")
-          Setlist(data)
+            console.log(data);
+          Setlist(data);
           } catch (error) {
             console.log(error);
             alert(error["response"]["data"])
@@ -76,28 +77,28 @@ export default function List() {
               <TableHead>
                 <TableRow>
                   <TableCell>S.No</TableCell>
-                  <TableCell align="left">Name</TableCell>
-                  <TableCell align="left">Email</TableCell>
-                  <TableCell align="left">Phone Number</TableCell>
-                  <TableCell align="left">Address</TableCell>
+                  <TableCell align="left">Product Name</TableCell>
+                  <TableCell align="left">Price</TableCell>
+                  <TableCell align="left">Rating</TableCell>
+                  <TableCell align="left">Available Quantity</TableCell>
                   {
-                    role !== "user" && <TableCell align="left">Acton</TableCell>
+                    role !== "user" && <TableCell align="left">Action</TableCell>
                   }
                 </TableRow>
               </TableHead>
               <TableBody>
-                {list.map((row) => (
+                {list?.map((row,i) => (
                   <TableRow
                     key={row.id}
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
-                      {row.id}
+                      {i+1}
                     </TableCell>
-                    <TableCell align="left">{row.name}</TableCell>
-                    <TableCell align="left">{row.email}</TableCell>
-                    <TableCell align="left">{row.phone}</TableCell>
-                    <TableCell align="left">{row.address.city}</TableCell>
+                    <TableCell align="left">{row.productname}</TableCell>
+                    <TableCell align="left">{row.price}</TableCell>
+                    <TableCell align="left">{row.rating}</TableCell>
+                    <TableCell align="left">{row.quantity}</TableCell>
                     <TableCell align="left">
                        { role !== "user" ? ( 
                         <>
